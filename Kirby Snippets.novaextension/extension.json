@@ -1,0 +1,10 @@
+{
+    "identifier": "medienbaecker.kirby-snippets",
+    "name": "Kirby Snippets",
+    "organization": "Thomas Günther",
+    "description": "Kirby Cheatsheet Completions",
+    "version": "0.1",
+    "categories": ["completions"],
+    "repository": "https://github.com/medienbaecker/nova-kirby-snippets",
+	"bugs": "https://github.com/medienbaecker/nova-kirby-snippets/issues"
+}

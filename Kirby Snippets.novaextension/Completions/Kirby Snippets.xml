@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<completions>
+
+  <provider name="kirby.helpers">
+    <syntax>php-base</syntax>
+    <selector>*:not(comment)</selector>
+    <expression>([a-zA-Z:]*)</expression>
+    <set>kirby.helpers</set>
+  </provider>
+  
+  <provider name="kirby.objects">
+    <syntax>php-base</syntax>
+    <selector>*:not(comment)</selector>
+    <expression>(?&lt;=\$)([a-zA-Z]*)</expression>
+    <set>kirby.objects</set>
+  </provider>
+
+  <provider name="kirby.methods">
+    <syntax>php-base</syntax>
+    <selector>*:not(comment)</selector>
+    <expression>(?&lt;=\>)([a-zA-Z]*)</expression>
+    <set>kirby.methods</set>
+  </provider>
+  
+  <set name="kirby.helpers" symbol="method">
+    <behavior>
+      <append>($[])</append>
+    </behavior>
+    <completion string="asset"/>
+    <completion string="attr"/>
+    <completion string="collection"/>
+    <completion string="csrf"/>
+    <completion string="css"/>
+    <completion string="deprecated"/>
+    <completion string="dump"/>
+    <completion string="e"/>
+    <completion string="esc"/>
+    <completion string="get"/>
+    <completion string="gist"/>
+    <completion string="go"/>
+    <completion string="h"/>
+    <completion string="html"/>
+    <completion string="image"/>
+    <completion string="invalid"/>
+    <completion string="js"/>
+    <completion string="kirby"/>
+    <completion string="kirbytag"/>
+    <completion string="kirbytags"/>
+    <completion string="kirbytext"/>
+    <completion string="kirbytextinline"/>
+    <completion string="load"/>
+    <completion string="markdown"/>
+    <completion string="option"/>
+    <completion string="page"/>
+    <completion string="pages"/>
+    <completion string="param"/>
+    <completion string="params"/>
+    <completion string="r"/>
+    <completion string="site"/>
+    <completion string="size"/>
+    <completion string="smartypants"/>
+    <completion string="snippet"/>
+    <completion string="svg"/>
+    <completion string="t"/>
+    <completion string="tc"/>
+    <completion string="tt"/>
+    <completion string="twitter"/>
+    <completion string="u"/>
+    <completion string="url"/>
+    <completion string="video"/>
+    <completion string="vimeo"/>
+    <completion string="widont"/>
+    <completion string="youtube"/>
+    <completion string="Str::accepted"/>
+    <completion string="Str::after"/>
+    <completion string="Str::ascii"/>
+    <completion string="Str::before"/>
+    <completion string="Str::between"/>
+    <completion string="Str::contains"/>
+    <completion string="Str::convert"/>
+    <completion string="Str::encode"/>
+    <completion string="Str::encoding"/>
+    <completion string="Str::endsWith"/>
+    <completion string="Str::excerpt"/>
+    <completion string="Str::float"/>
+    <completion string="Str::from"/>
+    <completion string="Str::isURL"/>
+    <completion string="Str::kebab"/>
+    <completion string="Str::length"/>
+    <completion string="Str::lower"/>
+    <completion string="Str::ltrim"/>
+    <completion string="Str::pool"/>
+    <completion string="Str::position"/>
+    <completion string="Str::query"/>
+    <completion string="Str::random"/>
+    <completion string="Str::replace"/>
+    <completion string="Str::replaceReplacements"/>
+    <completion string="Str::replacements"/>
+    <completion string="Str::rtrim"/>
+    <completion string="Str::short"/>
+    <completion string="Str::slug"/>
+    <completion string="Str::snake"/>
+    <completion string="Str::split"/>
+    <completion string="Str::startsWith"/>
+    <completion string="Str::substr"/>
+    <completion string="Str::template"/>
+    <completion string="Str::toBytes"/>
+    <completion string="Str::toType"/>
+    <completion string="Str::trim"/>
+    <completion string="Str::ucfirst"/>
+    <completion string="Str::ucwords"/>
+    <completion string="Str::unhtml"/>
+    <completion string="Str::until"/>
+    <completion string="Str::upper"/>
+    <completion string="Str::widont"/>
+  </set>
+  
+  <set name="kirby.objects" symbol="variable">
+    <completion string="kirby"/>
+    <completion string="site"/>
+    <completion string="page"/>
+    <completion string="pages"/>
+  </set>
+  
+  <set name="kirby.methods" symbol="method">
+    <behavior>
+      <append>()</append>
+    </behavior>
+    <completion string="callback"/>
+    <completion string="escape"/>
+    <completion string="excerpt"/>
+    <completion string="inline"/>
+    <completion string="isFalse"/>
+    <completion string="isTrue"/>
+    <completion string="kirbytags"/>
+    <completion string="kirbytext"/>
+    <completion string="kirbytextinline"/>
+    <completion string="length"/>
+    <completion string="lower"/>
+    <completion string="markdown"/>
+    <completion string="nl2br"/>
+    <completion string="or"/>
+    <completion string="short"/>
+    <completion string="smartypants"/>
+    <completion string="split"/>
+    <completion string="toBool"/>
+    <completion string="toData"/>
+    <completion string="toDate"/>
+    <completion string="toFile"/>
+    <completion string="toFiles"/>
+    <completion string="toFloat"/>
+    <completion string="toInt"/>
+    <completion string="toLink"/>
+    <completion string="toPage"/>
+    <completion string="toPages"/>
+    <completion string="toStructure"/>
+    <completion string="toTimestamp"/>
+    <completion string="toUrl"/>
+    <completion string="toUser"/>
+    <completion string="toUsers"/>
+    <completion string="upper"/>
+    <completion string="value"/>
+    <completion string="widont"/>
+    <completion string="words"/>
+    <completion string="xml"/>
+    <completion string="yaml"/>
+    <completion string="asset"/>
+    <completion string="blur"/>
+    <completion string="bw"/>
+    <completion string="crop"/>
+    <completion string="extension"/>
+    <completion string="filename"/>
+    <completion string="grayscale"/>
+    <completion string="greyscale"/>
+    <completion string="html"/>
+    <completion string="isResizable"/>
+    <completion string="isViewable"/>
+    <completion string="mediaHash"/>
+    <completion string="mediaToken"/>
+    <completion string="meta"/>
+    <completion string="quality"/>
+    <completion string="rename"/>
+    <completion string="replace"/>
+    <completion string="resize"/>
+    <completion string="srcset"/>
+    <completion string="thumb"/>
+    <completion string="type"/>
+    <completion string="changeSort"/>
+    <completion string="changeNum"/>
+    <completion string="changeSlug"/>
+    <completion string="changeStatus"/>
+    <completion string="changeTemplate"/>
+    <completion string="controller"/>
+    <completion string="copy"/>
+    <completion string="createNum"/>
+    <completion string="depth"/>
+    <completion string="dirname"/>
+    <completion string="diruri"/>
+    <completion string="dragText"/>
+    <completion string="duplicate"/>
+    <completion string="go"/>
+    <completion string="hasNextInvisible" deprecated="true"/>
+    <completion string="hasNextListed"/>
+    <completion string="hasNextUnlisted"/>
+    <completion string="hasNextVisible" deprecated="true"/>
+    <completion string="hasPrevInvisible" deprecated="true"/>
+    <completion string="hasPrevListed"/>
+    <completion string="hasPrevUnlisted"/>
+    <completion string="hasPrevVisible" deprecated="true"/>
+    <completion string="hasTemplate"/>
+    <completion string="intendedTemplate"/>
+    <completion string="isActive"/>
+    <completion string="isAncestorOf"/>
+    <completion string="isCacheable"/>
+    <completion string="isChildOf"/>
+    <completion string="isDescendantOf"/>
+    <completion string="isDescendantOfActive"/>
+    <completion string="isDraft"/>
+    <completion string="isErrorPage"/>
+    <completion string="isHomeOrErrorPage"/>
+    <completion string="isHomePage"/>
+    <completion string="isInvisible" deprecated="true"/>
+    <completion string="isListed"/>
+    <completion string="isOpen"/>
+    <completion string="isPublished"/>
+    <completion string="isReadable"/>
+    <completion string="isSortable"/>
+    <completion string="isUnlisted"/>
+    <completion string="isVerified"/>
+    <completion string="isVisible" deprecated="true"/>
+    <completion string="nextInvisible" deprecated="true"/>
+    <completion string="nextListed"/>
+    <completion string="nextUnlisted"/>
+    <completion string="nextVisible" deprecated="true"/>
+    <completion string="num"/>
+    <completion string="panelId"/>
+    <completion string="parentId"/>
+    <completion string="parentModel"/>
+    <completion string="parents"/>
+    <completion string="prevInvisible" deprecated="true"/>
+    <completion string="prevListed"/>
+    <completion string="prevUnlisted"/>
+    <completion string="prevVisible" deprecated="true"/>
+    <completion string="publish"/>
+    <completion string="render"/>
+    <completion string="representation"/>
+    <completion string="resortSiblingsAfterUnlisting"/>
+    <completion string="slug"/>
+    <completion string="sort"/>
+    <completion string="status"/>
+    <completion string="templateSiblings"/>
+    <completion string="title"/>
+    <completion string="uid"/>
+    <completion string="unpublish"/>
+    <completion string="uri"/>
+    <completion string="findById"/>
+    <completion string="findByIdRecursive"/>
+    <completion string="findByUri"/>
+    <completion string="findOpen"/>
+    <completion string="invisible" deprecated="true"/>
+    <completion string="listed"/>
+    <completion string="merge"/>
+    <completion string="notTemplate"/>
+    <completion string="nums"/>
+    <completion string="published"/>
+    <completion string="template"/>
+    <completion string="unlisted"/>
+    <completion string="visible" deprecated="true"/>
+    <completion string="breadcrumb"/>
+    <completion string="changeTitle"/>
+    <completion string="children"/>
+    <completion string="childrenAndDrafts"/>
+    <completion string="createChild"/>
+    <completion string="draft"/>
+    <completion string="drafts"/>
+    <completion string="errorPage"/>
+    <completion string="errorPageId"/>
+    <completion string="findPageOrDraft"/>
+    <completion string="grandChildren"/>
+    <completion string="hasChildren"/>
+    <completion string="hasDrafts"/>
+    <completion string="hasInvisibleChildren" deprecated="true"/>
+    <completion string="hasListedChildren"/>
+    <completion string="hasUnlistedChildren"/>
+    <completion string="hasVisibleChildren" deprecated="true"/>
+    <completion string="homePage"/>
+    <completion string="homePageId"/>
+    <completion string="index"/>
+    <completion string="page"/>
+    <completion string="pages"/>
+    <completion string="previewUrl"/>
+    <completion string="purge"/>
+    <completion string="setPage"/>
+    <completion string="url"/>
+    <completion string="urlForLanguage"/>
+    <completion string="visit"/>
+    <completion string="wasModifiedAfter"/>
+    <completion string="apiUrl"/>
+    <completion string="audio"/>
+    <completion string="avatar"/>
+    <completion string="blueprint"/>
+    <completion string="blueprints"/>
+    <completion string="changeEmail"/>
+    <completion string="changeLanguage"/>
+    <completion string="changeName"/>
+    <completion string="changePassword"/>
+    <completion string="changeRole"/>
+    <completion string="code"/>
+    <completion string="content"/>
+    <completion string="contentFile"/>
+    <completion string="contentFileData"/>
+    <completion string="contentFileDirectory"/>
+    <completion string="contentFileExtension"/>
+    <completion string="contentFileName"/>
+    <completion string="contentFiles"/>
+    <completion string="createFile"/>
+    <completion string="createId"/>
+    <completion string="decrement"/>
+    <completion string="delete"/>
+    <completion string="documents"/>
+    <completion string="dragTextFromCallback"/>
+    <completion string="dragTextType"/>
+    <completion string="email"/>
+    <completion string="errors"/>
+    <completion string="exists"/>
+    <completion string="file"/>
+    <completion string="files"/>
+    <completion string="hardcopy"/>
+    <completion string="hasAudio"/>
+    <completion string="hasCode"/>
+    <completion string="hasDocuments"/>
+    <completion string="hasFiles"/>
+    <completion string="hasImages"/>
+    <completion string="hasNext"/>
+    <completion string="hasPrev"/>
+    <completion string="hasVideos"/>
+    <completion string="hashPassword"/>
+    <completion string="id"/>
+    <completion string="image"/>
+    <completion string="images"/>
+    <completion string="increment"/>
+    <completion string="inventory"/>
+    <completion string="is"/>
+    <completion string="isAdmin"/>
+    <completion string="isFirst"/>
+    <completion string="isKirby"/>
+    <completion string="isLast"/>
+    <completion string="isLastAdmin"/>
+    <completion string="isLastUser"/>
+    <completion string="isLocked"/>
+    <completion string="isLoggedIn"/>
+    <completion string="isNth"/>
+    <completion string="isValid"/>
+    <completion string="kirby"/>
+    <completion string="language"/>
+    <completion string="lock"/>
+    <completion string="login"/>
+    <completion string="loginPasswordless"/>
+    <completion string="logout"/>
+    <completion string="mediaRoot"/>
+    <completion string="mediaUrl"/>
+    <completion string="model"/>
+    <completion string="modified"/>
+    <completion string="name"/>
+    <completion string="nextAll"/>
+    <completion string="nobody"/>
+    <completion string="panelIcon"/>
+    <completion string="panelImage"/>
+    <completion string="panelOptions"/>
+    <completion string="panelPath"/>
+    <completion string="panelPickerData"/>
+    <completion string="panelUrl"/>
+    <completion string="password"/>
+    <completion string="permissions"/>
+    <completion string="prevAll"/>
+    <completion string="readContent"/>
+    <completion string="roles"/>
+    <completion string="root"/>
+    <completion string="save"/>
+    <completion string="setSite"/>
+    <completion string="siblings"/>
+    <completion string="site"/>
+    <completion string="translation"/>
+    <completion string="translations"/>
+    <completion string="update"/>
+    <completion string="username"/>
+    <completion string="validatePassword"/>
+    <completion string="videos"/>
+    <completion string="writeContent"/>
+    <completion string="add"/>
+    <completion string="append"/>
+    <completion string="callMethod"/>
+    <completion string="chunk"/>
+    <completion string="clone"/>
+    <completion string="count"/>
+    <completion string="create"/>
+    <completion string="current"/>
+    <completion string="data"/>
+    <completion string="empty"/>
+    <completion string="extend"/>
+    <completion string="factory"/>
+    <completion string="filter"/>
+    <completion string="filterBy"/>
+    <completion string="find"/>
+    <completion string="findBy"/>
+    <completion string="findByKey"/>
+    <completion string="first"/>
+    <completion string="flip"/>
+    <completion string="get"/>
+    <completion string="getAttribute"/>
+    <completion string="getIterator"/>
+    <completion string="group"/>
+    <completion string="groupBy"/>
+    <completion string="has"/>
+    <completion string="hasMethod"/>
+    <completion string="indexOf"/>
+    <completion string="intersection"/>
+    <completion string="intersects"/>
+    <completion string="isEmpty"/>
+    <completion string="isEven"/>
+    <completion string="isNotEmpty"/>
+    <completion string="isOdd"/>
+    <completion string="key"/>
+    <completion string="keyOf"/>
+    <completion string="keys"/>
+    <completion string="last"/>
+    <completion string="limit"/>
+    <completion string="load"/>
+    <completion string="map"/>
+    <completion string="next"/>
+    <completion string="not"/>
+    <completion string="nth"/>
+    <completion string="offset"/>
+    <completion string="paginate"/>
+    <completion string="pagination"/>
+    <completion string="parent"/>
+    <completion string="pluck"/>
+    <completion string="prepend"/>
+    <completion string="prev"/>
+    <completion string="query"/>
+    <completion string="remove"/>
+    <completion string="rewind"/>
+    <completion string="role"/>
+    <completion string="search"/>
+    <completion string="set"/>
+    <completion string="shuffle"/>
+    <completion string="slice"/>
+    <completion string="sortArgs"/>
+    <completion string="sortBy"/>
+    <completion string="toArray"/>
+    <completion string="toJson"/>
+    <completion string="toString"/>
+    <completion string="valid"/>
+    <completion string="values"/>
+    <completion string="when"/>
+    <completion string="without"/>
+    <!-- <completion string="__construct"/> -->
+  </set>
+  
+</completions>
