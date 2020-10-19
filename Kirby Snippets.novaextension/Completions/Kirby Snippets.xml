@@ -13,7 +13,7 @@
     <syntax>php-base</syntax>
     <selector>*:not(comment)</selector>
     <!-- After space -->
-    <expression>(?&lt;=\s)([a-zA-Z]*)</expression>
+    <expression>(?&lt;=\s)([a-zA-Z:]*)</expression>
     <set>kirby.helpers</set>
   </provider>
   

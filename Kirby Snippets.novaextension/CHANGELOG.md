@@ -13,3 +13,7 @@ Better expression for detecting `->` methods
 ## Version 0.4
 
 Added icon completions from https://getkirby.com/docs/reference/panel/icons
+
+## Version 0.5
+
+Add `:` to helpers regex for `Str::` helpers
