@@ -5,3 +5,11 @@ Initial release
 ## Version 0.2
 
 Helpers will now only be suggested after a space character
+
+## Version 0.3
+
+Better expression for detecting `->` methods
+
+## Version 0.4
+
+Added icon completions from https://getkirby.com/docs/reference/panel/icons

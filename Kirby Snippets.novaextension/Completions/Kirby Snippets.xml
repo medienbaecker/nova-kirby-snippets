@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <completions>
 
+  <provider name="kirby.icons">
+    <syntax>yaml</syntax>
+    <selector>*:not(comment)</selector>
+    <!-- After space: -->
+    <expression>(?&lt;=icon\:\s)([a-zA-Z]*)</expression>
+    <set>kirby.icons</set>
+  </provider>
+
   <provider name="kirby.helpers">
     <syntax>php-base</syntax>
     <selector>*:not(comment)</selector>
@@ -21,9 +29,123 @@
     <syntax>php-base</syntax>
     <selector>*:not(comment)</selector>
     <!-- After > -->
-    <expression>(?&lt;=\>)([a-zA-Z]*)</expression>
+    <expression>(?&lt;=(\-\>))([a-zA-Z]*)</expression>
     <set>kirby.methods</set>
   </provider>
+  
+  <set name="kirby.icons" symbol="variable">
+    <completion string="account"/>
+    <completion string="add"/>
+    <completion string="alert"/>
+    <completion string="angle-down"/>
+    <completion string="angle-left"/>
+    <completion string="angle-right"/>
+    <completion string="angle-up"/>
+    <completion string="attachment"/>
+    <completion string="bars"/>
+    <completion string="bell"/>
+    <completion string="bold"/>
+    <completion string="bolt"/>
+    <completion string="book"/>
+    <completion string="bookmark"/>
+    <completion string="box"/>
+    <completion string="bug"/>
+    <completion string="calendar"/>
+    <completion string="cancel"/>
+    <completion string="car"/>
+    <completion string="cart"/>
+    <completion string="chart"/>
+    <completion string="chat"/>
+    <completion string="check"/>
+    <completion string="circle"/>
+    <completion string="circle-filled"/>
+    <completion string="circle-outline"/>
+    <completion string="clock"/>
+    <completion string="code"/>
+    <completion string="cog"/>
+    <completion string="collapse"/>
+    <completion string="copy"/>
+    <completion string="credit-card"/>
+    <completion string="dashboard"/>
+    <completion string="document"/>
+    <completion string="dots"/>
+    <completion string="download"/>
+    <completion string="draft"/>
+    <completion string="edit"/>
+    <completion string="email"/>
+    <completion string="expand"/>
+    <completion string="facebook"/>
+    <completion string="file"/>
+    <completion string="file-audio"/>
+    <completion string="file-code"/>
+    <completion string="file-document"/>
+    <completion string="file-image"/>
+    <completion string="file-spreadsheet"/>
+    <completion string="file-text"/>
+    <completion string="file-video"/>
+    <completion string="file-word"/>
+    <completion string="file-zip"/>
+    <completion string="folder"/>
+    <completion string="funnel"/>
+    <completion string="globe"/>
+    <completion string="headline"/>
+    <completion string="heart"/>
+    <completion string="home"/>
+    <completion string="image"/>
+    <completion string="import"/>
+    <completion string="instagram"/>
+    <completion string="italic"/>
+    <completion string="key"/>
+    <completion string="layers"/>
+    <completion string="linkedin"/>
+    <completion string="list-bullet"/>
+    <completion string="list-numbers"/>
+    <completion string="loader"/>
+    <completion string="lock"/>
+    <completion string="logout"/>
+    <completion string="map"/>
+    <completion string="markdown"/>
+    <completion string="menu"/>
+    <completion string="open"/>
+    <completion string="page"/>
+    <completion string="parent"/>
+    <completion string="phone"/>
+    <completion string="pinterest"/>
+    <completion string="preview"/>
+    <completion string="protected"/>
+    <completion string="question"/>
+    <completion string="quote"/>
+    <completion string="refresh"/>
+    <completion string="remove"/>
+    <completion string="search"/>
+    <completion string="settings"/>
+    <completion string="share"/>
+    <completion string="smile"/>
+    <completion string="sort"/>
+    <completion string="star"/>
+    <completion string="strikethrough"/>
+    <completion string="tag"/>
+    <completion string="template"/>
+    <completion string="text"/>
+    <completion string="title"/>
+    <completion string="toggle-off"/>
+    <completion string="toggle-on"/>
+    <completion string="trash"/>
+    <completion string="twitter"/>
+    <completion string="underline"/>
+    <completion string="undo"/>
+    <completion string="unlock"/>
+    <completion string="upload"/>
+    <completion string="url"/>
+    <completion string="user"/>
+    <completion string="users"/>
+    <completion string="video"/>
+    <completion string="vimeo"/>
+    <completion string="wand"/>
+    <completion string="whatsapp"/>
+    <completion string="wheelchair"/>
+    <completion string="youtube"/>
+  </set>
   
   <set name="kirby.helpers" symbol="method">
     <behavior>

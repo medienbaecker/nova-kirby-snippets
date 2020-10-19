@@ -3,7 +3,7 @@
     "name": "Kirby Snippets",
     "organization": "Thomas Günther",
     "description": "Kirby Cheatsheet Completions",
-    "version": "0.2",
+    "version": "0.4",
     "categories": ["completions"],
     "repository": "https://github.com/medienbaecker/nova-kirby-snippets",
 	"bugs": "https://github.com/medienbaecker/nova-kirby-snippets/issues"
