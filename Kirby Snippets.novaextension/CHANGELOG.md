@@ -16,4 +16,12 @@ Added icon completions from https://getkirby.com/docs/reference/panel/icons
 
 ## Version 0.5
 
-Add `:` to helpers regex for `Str::` helpers
+Added `:` to helpers regex for `Str::` helpers
+
+## Version 0.6
+
+Added README
+
+## Version 0.6.1
+
+Fixed README
