@@ -25,3 +25,7 @@ Added README
 ## Version 0.6.1
 
 Fixed README
+
+## Version 0.7.0
+
+Added $block and $blocks methods
