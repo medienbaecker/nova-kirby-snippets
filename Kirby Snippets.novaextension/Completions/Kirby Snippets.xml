@@ -580,6 +580,11 @@
     <completion string="when"/>
     <completion string="without"/>
     <!-- <completion string="__construct"/> -->
+    <completion string="toBlocks"/>
+    <completion string="parse"/>
+    <completion string="isHidden"/>
+    <completion string="toField"/>
+    <completion string="toHtml"/>
   </set>
   
 </completions>
