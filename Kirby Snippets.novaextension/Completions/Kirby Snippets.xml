@@ -44,6 +44,7 @@
     <completion string="attachment"/>
     <completion string="bars"/>
     <completion string="bell"/>
+    <completion string="blank"/>
     <completion string="bold"/>
     <completion string="bolt"/>
     <completion string="book"/>
@@ -52,6 +53,7 @@
     <completion string="bug"/>
     <completion string="calendar"/>
     <completion string="cancel"/>
+    <completion string="cancel-small"/>
     <completion string="car"/>
     <completion string="cart"/>
     <completion string="chart"/>
@@ -59,6 +61,8 @@
     <completion string="check"/>
     <completion string="circle"/>
     <completion string="circle-filled"/>
+    <completion string="circle-half"/>
+    <completion string="circle-nested"/>
     <completion string="circle-outline"/>
     <completion string="clock"/>
     <completion string="code"/>
@@ -90,6 +94,7 @@
     <completion string="globe"/>
     <completion string="headline"/>
     <completion string="heart"/>
+    <completion string="hidden"/>
     <completion string="home"/>
     <completion string="image"/>
     <completion string="import"/>
@@ -100,6 +105,7 @@
     <completion string="linkedin"/>
     <completion string="list-bullet"/>
     <completion string="list-numbers"/>
+    <completion string="live"/>
     <completion string="loader"/>
     <completion string="lock"/>
     <completion string="logout"/>
@@ -117,6 +123,7 @@
     <completion string="quote"/>
     <completion string="refresh"/>
     <completion string="remove"/>
+    <completion string="road-sign"/>
     <completion string="search"/>
     <completion string="settings"/>
     <completion string="share"/>
